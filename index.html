@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+    <div class="container"> <!--holds all of the divs for the password generator-->
+        <h1>GENDEV </h1>
+        <h2>Password Generator</h2>
+        <div class="result-container"> <!--this class controls the password that is generated-->
+            <span id="result"></span> <!--password text goes here-->
+        </div>
+        <div class="field" > </div> 
+        <!--we used labels because we are taking in input from user about what to include-->
+        <div class="settings"> <!--class controls all of the requirements that the user set-->
+            <div class="setting">
+                <label>Password length</label>
+                <input type="number" id="length" min='8' max='128' value='10' /> <!--sets the minimum and max amount of characters-->
+            </div>
+            <div class="setting">
+                <label>Include uppercase letters</label> <!--label controls if user wants to set uppercase-->
+                <input type="checkbox" id="uppercase" checked /> <!--id are being used to manipulate dom in js-->
+            </div>
+            <div class="setting">
+                <label>Include lowercase letters</label> <!--label controls if user wants to set lowercase-->
+                <input type="checkbox" id="lowercase" checked /> <!--id are being used to manipulate dom in js-->
+            </div>
+            <div class="setting">
+                <label>Include numbers</label> <!--label controls if user wants to add numbers-->
+                <input type="checkbox" id="numbers" checked /> <!--id are being used to manipulate dom in js-->
+            </div>
+            <div class="setting">
+                <label>Include special characters(ex: %$!@)</label> <!--label controls if user wants to add characters-->
+                <input type="checkbox" id="symbols" checked /> <!--id are being used to manipulate dom in js-->
+            </div>
+        </div>
+        <button class="btnGenerate" id="generate"> <!--when user clicks button password will generate-->
+            Generate Password
+        </button>
+    </div>
+    <!--checkbox was used over radio button because we are not choosing from multiple options -->
+
+
+    <!--different color buttons with our names and it will link to our github-->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                      
+    
+  
+</body>
+</html>
